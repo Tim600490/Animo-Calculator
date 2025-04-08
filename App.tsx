@@ -85,7 +85,7 @@ function App() {
                 </label>
                 <input
                   type="range"
-                  min="1000"
+                  min="25000"
                   max="1000000"
                   value={startAmount}
                   onChange={(e) => setStartAmount(Number(e.target.value))}
@@ -100,7 +100,7 @@ function App() {
                 </label>
                 <input
                   type="range"
-                  min="1"
+                  min="3"
                   max="30"
                   value={investmentPeriod}
                   onChange={(e) => setInvestmentPeriod(Number(e.target.value))}
@@ -131,8 +131,8 @@ function App() {
                 </label>
                 <input
                   type="range"
-                  min="0"
-                  max="2000"
+                  min="100"
+                  max="5000"
                   value={monthlyContribution}
                   onChange={(e) => setMonthlyContribution(Number(e.target.value))}
                   className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-[#FF4D4D]"
